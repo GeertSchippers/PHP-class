@@ -7,6 +7,7 @@ $_SESSION['getal_1'] += $getal_1;
 
 $getal_2 = $_GET['getal_2'];
 $rekenen = $_GET['rekenen'];
+$uitkomst = 10;
 
 echo "getal 1 = ".$getal_1.'<br>';
 echo "getal 2 = ".$getal_2.'<br>';
@@ -22,14 +23,17 @@ function rekenen($getal_1, $getal_2, $rekenen){
         $uitkomst = $getal_1 - $getal_2;
         
         echo 'de uitkomst ='.$uitkomst;
+        
     }elseif($rekenen == 'delen'){
         $uitkomst = $getal_1 / $getal_2;
         
         echo 'de uitkomst ='.$uitkomst;
+        
     }elseif($rekenen == 'keer'){
         $uitkomst = $getal_1 * $getal_2;
         
     echo 'de uitkomst ='.$uitkomst;
+    
     }
 }
 
