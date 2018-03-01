@@ -20,5 +20,17 @@ function rekenen($getal_1, $getal_2, $rekenen){
         $uitkomst = $getal_1 - $getal_2;
         
         echo 'de uitkomst ='.$uitkomst;
+    }elseif($rekenen == 'delen'){
+        $uitkomst = $getal_1 / $getal_2;
+        
+        echo 'de uitkomst ='.$uitkomst;
+    }elseif($rekenen == 'keer'){
+        $uitkomst = $getal_1 * $getal_2;
+        
+    echo 'de uitkomst ='.$uitkomst;
+    
     }
+    
 }
+
+rekenen($getal_1, $getal_2, $rekenen);
