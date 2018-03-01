@@ -1,8 +1,10 @@
 <?php
-// getal_1=10&getal_2=20&optellen
-session_start();
+//http://localhost/qien/rekenmachine?getal_1=10&getal_2=20&rekenen=keer
 
-$getal_1 = $_GET['getal_1'];
+session_start();
+$getal_1 =$_SESSION['getal_1'] ;
+$_SESSION['getal_1'] += $getal_1;
+
 $getal_2 = $_GET['getal_2'];
 $rekenen = $_GET['rekenen'];
 
@@ -28,9 +30,7 @@ function rekenen($getal_1, $getal_2, $rekenen){
         $uitkomst = $getal_1 * $getal_2;
         
     echo 'de uitkomst ='.$uitkomst;
-    
     }
-    
 }
 
 rekenen($getal_1, $getal_2, $rekenen);
