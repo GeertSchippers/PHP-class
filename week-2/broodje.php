@@ -36,7 +36,7 @@ $plofkip = new broodje(3);
     $plofkip->graansoort = "Tarwe";
     $plofkip->krokantheid = "krokante";
     $plofkip->beleg = "met een laag authentieke plofkip";
-    $plofkip->happen = 9;
+    $plofkip->happen = 6;
     $plofkip->prijs = 3;
 
 $sandswitch = new broodje();
