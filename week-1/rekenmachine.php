@@ -2,12 +2,13 @@
 //http://localhost/qien/rekenmachine?getal_1=10&getal_2=20&rekenen=keer
 
 session_start();
+
 $getal_1 =$_SESSION['getal_1'] ;
 $_SESSION['getal_1'] += $getal_1;
 
 $getal_2 = $_GET['getal_2'];
 $rekenen = $_GET['rekenen'];
-$uitkomst = 10;
+$uitkomst = 0;
 
 echo "getal 1 = ".$getal_1.'<br>';
 echo "getal 2 = ".$getal_2.'<br>';
@@ -18,6 +19,7 @@ function rekenen($getal_1, $getal_2, $rekenen){
         $uitkomst = $getal_1 + $getal_2;
         
         echo 'de uitkomst ='.$uitkomst;
+        return $uitkomst;
         
     }elseif($rekenen == 'aftreken'){
         $uitkomst = $getal_1 - $getal_2;
