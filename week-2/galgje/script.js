@@ -7,9 +7,13 @@
 //    var word = document.getElementById("word").value;
 //    document.location = "index.php?answer="+word;
 //}
-function geuss(){
+function geussLetter(){
     var geuss = document.getElementById("word").value;
-    document.location = "index.php?geuss="+geuss;
+    document.location = "index.php?geussLetter="+geuss;
+}
+function geussWord(){
+    var geuss = document.getElementById("word").value;
+    document.location = "index.php?geussWord="+geuss;
 }
 
 

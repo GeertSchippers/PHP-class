@@ -1,14 +1,21 @@
 <?php 
-    $geuss = $_GET['geuss'];
+    $geussLetter = $_GET['geussLetter'];
+    $geussWord = $_GET['geussWord'];
     
-    $answer = 'word';
-    
-    
-    $wordArray = str_split($answer);
+    $answer = "eend";    
+    $letterArray = str_split($answer);
 
-
-    if (in_array($geuss, $wordArray)) {
-        echo "yes!";
-    }else{
-        echo "nope";
-    }
+//    function checkLetter ($letterArray, $geussLetter){
+        foreach( $letterArray as $letter){
+            if ($geussLetter == $letter){
+                echo $letter." ";
+            }else{
+                echo " _ ";
+            }
+        }
+//    }
+//    function checkWord($letterArray, $geussLetter){
+        if($geussWord == $answer){
+            echo "Je hebt het woord geraden!";
+        }
+//    }

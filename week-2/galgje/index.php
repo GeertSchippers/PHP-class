@@ -8,7 +8,6 @@
         <div>
             <p>
                 <?php 
-                echo $answer.'<br>';
                 echo $geuss.'<br>'; 
 //                print_r($wordArray);
                 ?> 
@@ -16,7 +15,8 @@
         </div>
         <div>
             <input type="text" id="word">
-            <input type=button value=check onclick=geuss()>
+            <input type=button value='check letter'onclick=geussLetter()>
+            <input type=button value='check word'onclick=geussWord()>
 <!--            <input type=button value=insert onclick=sendAnswer()>-->
         </div>
     </body>
