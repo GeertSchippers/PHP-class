@@ -2,15 +2,15 @@
     <head>
         <title>galgje</title>
         <script src="script.js"></script>
-        <?php include 'function.php';?>
+        
     </head>
     <body>
         <div>
             <p>
                 <?php 
-                echo $geuss.'<br>'; 
-//                print_r($wordArray);
-                ?> 
+                    include 'function.php';
+                    print_r( $_SESSION['geussLetters']);
+                ?>
             </p>
         </div>
         <div>

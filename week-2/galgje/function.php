@@ -2,18 +2,22 @@
     $geussLetter = $_GET['geussLetter'];
     $geussWord = $_GET['geussWord'];
     
-    $answer = "eend";    
+    $_SESSION['geussLetters']=array();
+    array_push($_SESSION['geussLetters'], $_GET['geussLetter']);
+    
+    
+    
+    $answer = "eend";
     $letterArray = str_split($answer);
 
-//    function checkLetter ($letterArray, $geussLetter){
-        foreach( $letterArray as $letter){
-            if ($geussLetter == $letter){
-                echo $letter." ";
-            }else{
-                echo " _ ";
-            }
+    foreach( $letterArray as $letter){
+        if (in_array($letter, $_SESSION['geussLetters'])){
+            echo " ".$letter." ";
+        }else{
+            echo " _ ";
         }
-//    }
+    }
+    
 //    function checkWord($letterArray, $geussLetter){
         if($geussWord == $answer){
             echo "Je hebt het woord geraden!";
