@@ -6,12 +6,20 @@
     </head>
     <body>
         <div>
-            <p>
                 <?php 
                     include 'function.php';
-                    print_r( $_SESSION['geussLetters']);
+                    echo '<br><br>het woord:<br>';
+                    print_r($letterArray);
+                    echo '<br> de geprobeerde letters:<br>';
+                    print_r($geussedArray);
                 ?>
-            </p>
+            <div>
+                <p>
+                    <?php 
+                        mistake($letterArray, $mistakeCounter, $geussedArray);
+                    ?>
+                </p>
+            </div>
         </div>
         <div>
             <input type="text" id="word">
