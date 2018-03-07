@@ -1,8 +1,10 @@
 <?php 
     $geussLetter = $_GET['geussLetter'];
-    $geussWord = $_GET['geussWord'];
+//    $geussWord = $_GET['geussWord'];
+    if (empty($_SESSION['geussLetters'])){
+        $_SESSION['geussLetters']=array();
+    }
     
-    $_SESSION['geussLetters']=array();
     array_push($_SESSION['geussLetters'], $_GET['geussLetter']);
     
     
@@ -17,9 +19,7 @@
             echo " _ ";
         }
     }
-    
-//    function checkWord($letterArray, $geussLetter){
-        if($geussWord == $answer){
-            echo "Je hebt het woord geraden!";
-        }
-//    }
+   
+//        if($geussWord == $answer){
+//            echo "Je hebt het woord geraden!";
+//        }
