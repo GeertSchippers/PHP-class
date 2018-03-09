@@ -1,0 +1,12 @@
+.schijf10{
+    height: 100px;
+    width: 100px;
+    background-color: coral;
+    border-radius: 100px;
+}
+.schijf10 > p {
+    text-align: center;
+    color: seashell;
+    padding-top: 34%;
+    font-size: 25px;
+}

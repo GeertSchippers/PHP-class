@@ -1,12 +1,13 @@
 <?php 
-    $answer = "werk";
+    $session_start;
+    $answer = "eend";
     $letterArray = str_split($answer);
     
     $geussLetter = $_GET['geussLetter'];
     
     $_SESSION['geussedLetters']= [];
     array_push($_SESSION['geussedLetters'], $_GET['geussLetter']);
-    //    $_SESSION['geussedLetters'] = ['a','b','c','d','e','n'];
+//        $_SESSION['geussedLetters'] = ['a','b','c','d','e','n'];
     $geussedArray = $_SESSION['geussedLetters'];
         
     $mistakeCounter = 0;
@@ -30,6 +31,5 @@
         echo $mistakeCounter;
     }
 
-    
-    $_SESSION['geussedLetters']= $geussedArray;
-    $_SESSION['mistakecounter']= $mistakeCounter;
+     
+//   $_SESSION['geussedLetters']= $geussedArray;
