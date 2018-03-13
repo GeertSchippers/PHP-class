@@ -14,35 +14,24 @@
                 };
                 xhttp.open("GET", "ajaxtest.php?jojo="+co.value, true);
                 xhttp.send();
-                dt.onclick = change;
-            }
-            function change(){
-                
             }
         </script>
         <Style>
-            .cell{
-                display: inline-block;
+            .raak{
+                background-color:  coral;
             }
-            .cell > input{
+            input{
+                display: inline-block;
                 height: 80px;
                 width: 80px;
                 background-color: cornflowerblue;
-            }
+            }            
         </style>
     </head>
     <body>
-        <div class="cell">
-           <input type="button" onclick="zoek(this)" value="a1"> 
-        </div>
-        
-        <div class="cell">
-           <input type="button" onclick="zoek(this)" value="a2"> 
-        </div>
-        
-        <div class="cell">
-           <input type="button" onclick="zoek(this)" value="a3"> 
-        </div>
+            <input type="button" id="a1" onclick="zoek(this)" value="a1"> 
+            <input type="button" onclick="zoek(this)" value="a2"> 
+            <input type="button" onclick="zoek(this)" value="a3"> 
         <div id="demo"> </div>
     </body>
 </html>
