@@ -17,7 +17,7 @@
     </body>
 </html>
 <script> 
-    var i=60;
+    var i=6;
     
     function Timer(){
     
