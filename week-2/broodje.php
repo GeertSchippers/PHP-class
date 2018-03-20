@@ -1,35 +1,16 @@
 <?php
-include 'klasse.php';
-
-//$student1 = new student(); //constructor
-//    $student1->voornaam = "Alexander"; //properties
-//    $student1->achternaam = "Lexis";
-//    $student1->leeftijd = 29;
-//
-//$student2 = new student();
-//    $student2->voornaam = "Steven";
-//    $student2->achternaam = "Visser";
-//    $student2->leeftijd = 30;
-//
-//
-//$student1->voorstellen();
-//$student2->voorstellen();
-//
-//    $studenten =[$student1, $student2]; //objecten kunnen ook in een Array
-//    
-//    function administreren($destudent){
-//        echo "De student ".$destudent->voornaam." is geadminstreerd";
-//    }
-//    
-//    administreren($student2);
-//    
-//    for($s = 0; $s < count($studenten); $s++){ //De variabele s staat gelijk aan 0. Zolang s kleiner is dan het aantal studenten (Dit word getelt door de count();. na het doorlopen van de loop die er 1 bij s.
-//        $studenten[$s]->voorstellen();
-//    }
-//    
-//    foreach($studenten as $student){ //for each loop versie
-//        $student->voorstellen();
-//    }
+class broodje{
+    public $naam;
+    public $broodsoort;
+    public $krokantheid;
+    public $beleg;
+    public $prijs;
+    public $happen;
+            
+    public function verkooppraatje(){
+        echo $this->naam." is bereid met ".$this->graansoort." brood en heeft een ".$this->krokantheid."korst,<br> Belegd met ".$this->beleg.". Je kunt hem un kopen voor maar <b>€".$this->prijs."</b> euro.<br><br>";
+    }
+}
 
 $plofkip = new broodje(3);
     $plofkip->naam = "Broodje plof kip";
